@@ -18,15 +18,15 @@ public class HomeController {
     MainService mainService;
 
     @GetMapping("/arooj/{kaushal}")
-    public String testMethod(@PathVariable String kaushal){
+    public String testMethods(@PathVariable String kaushal){
 
-        return "My name is "+ kaushal;
+        return  kaushal;
     }
-    @GetMapping("/arooj")
+    @GetMapping("/arooj/kaushal")
     public String testMethod(){
         AroojRequest a = new AroojRequest();
         a.setName("kaushal");
-        a.setPlace("Rishikesh");
+        a.setPlace("Rishik kesh");
         return a.toString();
     }
 
@@ -37,6 +37,7 @@ public class HomeController {
 
     @PostMapping("/paytm")
     public String testMethods(@RequestBody PaytmModelResponse kaushal){
+
         return "Okay payment is success!!";
     }
 //    public void methodEnvi(){

@@ -13,7 +13,7 @@ public class HomeControllerTest {
     void TestController(){
 
 
-        if(a.testMethod("kaushal").equals("My name is kaushal")){
+        if(a.testMethods("kaushal").equals("My name is kaushal")){
             System.out.println("test method woking properly");
         }else{
             System.out.println("it is not working");
